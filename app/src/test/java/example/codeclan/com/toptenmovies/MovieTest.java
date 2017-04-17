@@ -56,7 +56,7 @@ public class MovieTest {
     @Test
     public void getMovieDetailsTest() {
         String result = movie2.getDetails();
-        assertEquals("Title: Ghost in the Shell, Genre: Sci-fi, Ranking: 2", result);
+        assertEquals("Movie: Ghost in the Shell, Genre: Sci-fi, Ranking: 2", result);
     }
 
 

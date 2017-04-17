@@ -8,10 +8,22 @@ import java.lang.reflect.Array;
 
 public class Ranking {
 
-    private Array Movie;
+    private Movie[] movies;
 
     public Ranking() {
-        Array = new Array Movie;
+        this.movies = new Movie[10];
     }
+
+    public void setMovie(Movie movie) {
+        this.movies[movie.getRanking() -1] = movie;
+    }
+
+    public Movie getMovieByRank(int rank) {
+        return this.movies[rank-1];
+    }
+
+//    public String getTitle(Movie movie) {
+//        return this.movies[]
+//    }
 
 }

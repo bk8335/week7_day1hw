@@ -8,12 +8,12 @@ package example.codeclan.com.toptenmovies;
 public class Movie {
     private String title;
     private String genre;
-    private Ranking[] currentRanking;
+    private int currentRanking;
 
-    public Movie(String title, String genre) {
+    public Movie(String title, String genre, int currentRanking) {
         this.title = title;
         this.genre = genre;
-        this.currentRanking = new Ranking[10];
+        this.currentRanking = currentRanking;
     }
 
     public String getTitle() {
@@ -41,6 +41,8 @@ public class Movie {
     }
 
     public String getDetails() {
-        return "Title: " + getTitle() + ", Genre: " + getGenre() + ", Ranking: " + getRanking();
+        return "Movie: " + getTitle() + ", Genre: " + getGenre() + ", Ranking: " + getRanking();
     }
+
+
 }

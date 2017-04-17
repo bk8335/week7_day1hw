@@ -22,8 +22,5 @@ public class Ranking {
         return this.movies[rank-1];
     }
 
-//    public String getTitle(Movie movie) {
-//        return this.movies[]
-//    }
 
 }
